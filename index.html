@@ -38,6 +38,7 @@
             position: relative;
         }
 
+        /* 這裡定義了 .profile-photo class 的樣式 */
         .profile-photo {
             width: 152px;
             height: 152px;
@@ -46,6 +47,7 @@
             background-color: #eee;
             margin-top: -76px; /* 向上偏移一半 */
             object-fit: cover;
+            display: block; /* 確保圖片正確顯示 */
         }
 
         .info {
@@ -87,101 +89,4 @@
         }
 
         .item {
-            margin-bottom: 16px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-
-        .item h4 {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        .item .sub {
-            color: rgba(0,0,0,0.6);
-            font-size: 14px;
-            margin: 2px 0;
-        }
-
-        /* 技能標籤 */
-        .skill-tag {
-            display: inline-block;
-            background-color: transparent;
-            border: 1px solid rgba(0,0,0,0.6);
-            border-radius: 16px;
-            padding: 4px 12px;
-            font-size: 14px;
-            margin-right: 8px;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="banner"></div>
-        <div class="profile-section">
-            <img src="images/images/1.jpg" alt="陳氏草" class="profile-pic">
-            <div class="info">
-                <h1> 陳氏草 </h1>
-                <h2>您的專業職稱 | 關鍵字 1 | 關鍵字 2</h2>
-                <p style="color: rgba(0,0,0,0.6); font-size: 14px;">台灣，台北市</p>
-                <div class="contact-links">
-                    電子郵件：example@email.com &nbsp;•&nbsp; 
-                    <a href="#" style="color: #0a66c2; text-decoration: none;">LinkedIn 個人主頁</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section>
-        <h3>關於</h3>
-        <p>
-            在這裡用幾句話總結您的個人特色。例如：擁有 5 年以上跨國企業行銷經驗，擅長數據分析與品牌經營，致力於透過數位工具提升營運效率。
-        </p>
-    </section>
-
-    <section>
-        <h3>工作經歷</h3>
-        <div class="item">
-            <h4>資深專案經理</h4>
-            <p class="sub">某某科技股份有限公司 · 全職</p>
-            <p class="sub">2021 年 1 月 - 至今</p>
-            <p>負責年度預算規劃，成功提升轉單率 20%。</p>
-        </div>
-        <div class="item">
-            <h4>行銷專員</h4>
-            <p class="sub">某某數位媒體 · 全職</p>
-            <p class="sub">2018 年 6 月 - 2020 年 12 月</p>
-            <p>操作社交媒體平台，經營超過 50 萬追蹤者之社群。</p>
-        </div>
-    </section>
-
-    <section>
-        <h3>教育背景</h3>
-        <div class="item">
-            <h4>國立某某大學</h4>
-            <p class="sub">資訊管理學系，學士</p>
-            <p class="sub">2014 年 - 2018 年</p>
-        </div>
-    </section>
-
-    <section>
-        <h3>專業技能</h3>
-        <span class="skill-tag">專案管理</span>
-        <span class="skill-tag">數據分析 (Python/SQL)</span>
-        <span class="skill-tag">數位行銷</span>
-        <span class="skill-tag">UI/UX 設計</span>
-        <span class="skill-tag">溝通協調</span>
-    </section>
-</div>
-
-</body>
-</html>
+            margin-bottom: 16px
